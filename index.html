@@ -578,6 +578,7 @@
         type="button"
         class="save_button"
         onclick="window.dialogId.showModal()"
+        aria-controls="modal"
       >
         <span class="save-button-content">
           <svg>
@@ -596,11 +597,12 @@
           </div>
           <div>Вставьте<br />дискету, чтобы продолжить</div>
         </div>
-       
-          <button class="close-dialog" type="button" onclick="window.dialogId.close()">ок</button>
-        
+        <form method="dialog">
+          <button type="submit" class="close-dialog">
+            <span class="button__text">ок</span>
+          </button>
+        </form>
       </dialog>
-
     </main>
     <script src="./scripts/like.js"></script>
     <svg>
