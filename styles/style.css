@@ -26,6 +26,7 @@
   background-position: center;
   background-attachment: fixed;
   font-variation-settings: 'wght' var(--main-font-weight);
+  font-family: var(--main-font);
 }
 
 .header {
@@ -118,7 +119,7 @@ section {
 }
 
 .section-title {
-  font-weight: 700;
+  font-variation-settings: 'wght' var(--title-font-weight);
   line-height: normal;
   padding: 8px 10px;
 }
@@ -368,10 +369,10 @@ svg.like-icon.is-liked .heart {
 svg.like-icon.is-liked .sparks {
   animation: bright 0.3s ease-in;
 }
-
+/* 
 form {
   width: 100%;
-}
+} */
 
 @supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
   .label {
