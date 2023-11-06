@@ -369,6 +369,10 @@ svg.like-icon.is-liked .sparks {
   animation: bright 0.3s ease-in;
 }
 
+form {
+  width: 100%;
+}
+
 @supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
   .label {
     -webkit-text-stroke: 1px var(--bg-color);

@@ -577,8 +577,7 @@
       <button
         type="button"
         class="save_button"
-        onclick="window['dialog-id'].showModal()"
-        aria-controls="dialog-id"
+        onclick="window.dialogId.showModal()"
       >
         <span class="save-button-content">
           <svg>
@@ -588,7 +587,7 @@
         </span>
       </button>
 
-      <dialog id="dialog-id">
+      <dialog id="dialogId">
         <div class="dialog-text">
           <div>
             <svg width="39px" height="39px">
@@ -598,7 +597,7 @@
           <div>Вставьте<br />дискету, чтобы продолжить</div>
         </div>
         <form method="dialog">
-          <button class="close-dialog">ок</button>
+          <button class="close-dialog" type="submit">ок</button>
         </form>
       </dialog>
     </main>
