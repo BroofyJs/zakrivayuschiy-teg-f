@@ -182,7 +182,7 @@ section {
 }
 
 .now-sprint-img {
-  filter: sepia(0.36);
+  filter: sepia(0.36) brightness(0.7);
 }
 
 .like-zone {
@@ -366,4 +366,12 @@ svg.like-icon.is-liked .heart {
 
 svg.like-icon.is-liked .sparks {
   animation: bright 0.3s ease-in;
+}
+
+@supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
+  .label {
+    -webkit-text-stroke: 1px var(--bg-color);
+    text-stroke: 1px var(--bg-color);
+    text-shadow: none;
+  }
 }
